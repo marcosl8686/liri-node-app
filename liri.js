@@ -151,10 +151,7 @@ function random() {
 
   });
   fs.readFile("random.txt", "utf8", function(error, data) {
-
-  console.log(data);
   var dataArr = data.split(",");
-  console.log(dataArr);
-  spotifySong(dataArr[2]);
+  spotifySong(dataArr[1]);
 });
 }
